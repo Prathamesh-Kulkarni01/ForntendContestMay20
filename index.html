@@ -103,15 +103,17 @@ nav ul li a{
   color: #fff;
   top: 240px;
   max-width: 900px;
-  left: 20px;
+  left: 10%;
   padding: 20px;
 }
 
 main .content h2 {
-  font-size: 100px;
-
+  font-size: 80px;
+  max-width: 500px;
 }
-
+main .content p{
+    text-align: center;
+}
 .divider {
   width: min(40%,400px);
   height: 5px;
@@ -122,6 +124,7 @@ main .content h2 {
 
 main .content-section  p {
     max-width: 310px;
+    margin: auto;
   font-size: 18px;
 }
 
@@ -137,8 +140,8 @@ main .content-section  p {
 }
 
 .section-title {
-  font-size: 50px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .about-content {
@@ -211,7 +214,6 @@ main .content-section  p {
   padding: 0;
   font-weight: 400;
     margin-top: 10px;
-  color: #888;
 }
 
 .carousel-indicators button {
@@ -229,7 +231,7 @@ main .content-section  p {
 
 .footer{
     display: flex;
-    margin-top: 40px;
+    margin-top: 100px;
 justify-content: space-between !important;
 align-items: center;
 gap: 70%;
@@ -242,6 +244,9 @@ gap: 70%;
     position: absolute;
     right: 30px;
     padding-top: 80px;
+}
+p{
+    text-align: start;
 }
 @media screen and (max-width: 768px) {
   .content-section {
@@ -272,18 +277,15 @@ margin-top: 200px;
     margin: 40px;;
   grid-template-columns: repeat(1, 1fr);
 }
-
-}
-
-    @media screen and (max-width: 768px) {
-      header {
+header {
         padding: 10px;
         flex-direction: column;
       }
       nav ul li{
     display: block;
 }
-    }
+}
+
   </style>
 </head>
 <body>
@@ -291,12 +293,12 @@ margin-top: 200px;
     <h1>Pizza Restaurant</h1>
     <nav class="navigation">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#find-us">Find Us</a></li>
-        <li><a href="#our-team">Our Team</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#menu">MENU</a></li>
+        <li><a href="#carousel">CAROUSEL</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#find-us">FIND US</a></li>
+        <li><a href="#our-team">OUR TEAM/a></li>
       </ul>
     </nav>
     <div class="social-icons">
@@ -317,14 +319,14 @@ margin-top: 200px;
       </div>
     </div>
 
-    <section id="about-us">
+    <section id="about">
         <div class="container">
-          <h2 class="section-title">About Us</h2>
+          <h2 class="section-title">ABOUT US</h2>
           <div class="divider"></div>
           <div class="about-content">
             <div class="about-box">
               <div class="divider2"></div>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ypesetting industry. </p>
             </div>
             <div class="about-box">
               <img src="/img2.png" alt="About Us Image">
@@ -335,7 +337,7 @@ margin-top: 200px;
 
       <section id="menu">
         <div class="container">
-          <h2 class="section-title">Menu</h2>
+          <h2 class="section-title">MENU</h2>
           <div class="divider"></div>
           <div class="menu-items">
             <div class="menu-item">
@@ -386,7 +388,7 @@ margin-top: 200px;
 
       <section id="carousel">
         <div class="container">
-            <h2 class="section-title">find Us</h2>
+            <h2 class="section-title">Carousel</h2>
         <div class="divider"></div>
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
@@ -418,6 +420,8 @@ margin-top: 200px;
       
       <section id="gallery">
         <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="divider"></div>
           <div class="row">
             <div class="col-8">
               <img src="/pizza11.png" style="object-fit: cover;" alt="Image 1" class="img-fluid">
@@ -468,7 +472,5 @@ margin-top: 200px;
         </div>
       </footer>      
   </main>
-  
-
 </body>
 </html>
