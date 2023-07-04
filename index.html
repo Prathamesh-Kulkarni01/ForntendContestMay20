@@ -172,7 +172,9 @@ main .content-section  p {
   height: auto;
 }
 
-
+.carousel{
+    min-width: min(80vw,900px) !important;
+}
 
 #menu {
   background-color: black;
@@ -298,12 +300,11 @@ header {
         <li><a href="#carousel">CAROUSEL</a></li>
         <li><a href="#gallery">GALLERY</a></li>
         <li><a href="#find-us">FIND US</a></li>
-        <li><a href="#our-team">OUR TEAM/a></li>
+        <li><a href="#our-team">OUR TEAM</a></li>
       </ul>
     </nav>
     <div class="social-icons">
       <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
       <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
       <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
     </div>
@@ -357,28 +358,28 @@ header {
             <div class="menu-item">
                 <img src="./bread16.png" alt="Menu Item Image">
                 <div class="menu-info">
-                  <h3 class="menu-name">Menu Item 1</h3>
-                  <p class="menu-description">Description of Menu Item 1</p>
+                  <h3 class="menu-name">Menu Item 3</h3>
+                  <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat dui.</p>
                 </div>
               </div>
               <div class="menu-item">
                 <img  src="./pizza15.png" alt="Menu Item Image">
                 <div class="menu-info">
-                  <h3 class="menu-name">Menu Item 2</h3>
+                  <h3 class="menu-name">Menu Item 4</h3>
                   <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat dui.</p>
                 </div>
               </div>
               <div class="menu-item">
                 <img src="./shake17.png" alt="Menu Item Image">
                 <div class="menu-info">
-                  <h3 class="menu-name">Menu Item 1</h3>
-                  <p class="menu-description">Description of Menu Item 1</p>
+                  <h3 class="menu-name">Menu Item 5</h3>
+                  <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat dui.</p>
                 </div>
               </div>
               <div class="menu-item">
                 <img  src="./pizza1 1.png" alt="Menu Item Image">
                 <div class="menu-info">
-                  <h3 class="menu-name">Menu Item 2</h3>
+                  <h3 class="menu-name">Menu Item 6</h3>
                   <p class="menu-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac placerat dui.</p>
                 </div>
               </div>
@@ -407,11 +408,11 @@ header {
                     <img src="./pizza15.png" class="d-block w-100" alt="...">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button style="left:-100px" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button style="right:-100px" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -465,8 +466,8 @@ header {
           <div class=" footer">
               <img src="./Group.png" alt="Footer Logo">
               <div class="contact-info">
-                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
-                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i style="font-size: 20px;" class="fas fa-envelope m-1"></i> example@example.com</p>
+                <p><i style="font-size: 20px;" class="fas fa-phone m-1" ></i> +1 234 567 890</p>
               </div>
           </div>
         </div>
